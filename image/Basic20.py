@@ -16,6 +16,7 @@ while True:
 
     
 #    mask = cv2.inRange(img,lower,upper)
+    mask = cv2.inRange(img,lower,upper)
     if cv2.waitKey(0) & 0xFF == ord('e'):
         break
 
