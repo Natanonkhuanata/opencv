@@ -10,7 +10,7 @@ while True:
     # มีภาพสีเเขียวอยู่เท่าไหร่
     upper = numpy.array([124,255,133])
     lower = numpy.array([5,111,10])
-
+    
     mask = cv2.inRange(img,lower,upper)
 
     mask = cv2.inRange(img,lower,upper) #
