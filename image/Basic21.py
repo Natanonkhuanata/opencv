@@ -5,6 +5,8 @@ import cv2
 #อ่านภาพ
 img = cv2.imread("image/Love.jpg")
 imgresize = cv2.resize(img,(600,600))
+img = cv2.imread("image/NINJA.jpg")
+imgresize = cv2.resize(img,(600,700))
 face_cascade = cv2.CascadeClassifier("image/Detect/haarcascade_frontalface_default.xml") #การอ้านไฟล์สำหรับ cassification
 
 gray_img = cv2.cvtColor(imgresize,cv2.COLOR_BGR2GRAY)   #ทำให้ภาพเบลอด้วย grayscale
