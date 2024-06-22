@@ -1,11 +1,9 @@
-# ตรวจจับใบหน้าจากวิดีโอ
-
+#การเปิดวิดีโอ ด้วยopencv
 
 
 import cv2
 
-#อ่านวิดีโอ
-cap = cv2.VideoCapture("imgae/Mark.mp4")
+cap = cv2.VideoCapture("image/Robot.mp4") # ตรวจหาที่เก็บวิดีโอ
 
 while(cap.isOpened):
     check , frame = cap.read()   #อ่านวิดีโอ โดยเก็บในตัวแปร check
@@ -16,4 +14,5 @@ while(cap.isOpened):
     else:
         break
 
-#เเสดงผล
+cap.release()
+cv2.destroyAllWindows()
