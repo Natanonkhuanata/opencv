@@ -3,7 +3,7 @@
 
 import cv2
 
-cap = cv2.VideoCapture("image/Robot.mp4") # ตรวจหาที่เก็บวิดีโอ
+cap = cv2.VideoCapture("image/Mark.mp4") # ตรวจหาที่เก็บวิดีโอ
 
 while(cap.isOpened):
     check , frame = cap.read()   #อ่านวิดีโอ โดยเก็บในตัวแปร check
@@ -15,4 +15,4 @@ while(cap.isOpened):
         break
 
 cap.release()
-cv2.destroyAllWindows()
+cv2.destroyAllWindows()e
